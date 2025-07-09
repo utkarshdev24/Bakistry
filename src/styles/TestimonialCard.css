@@ -1,0 +1,17 @@
+.testimonial-card-bg {
+  background-color: #D5F1FC;
+}
+
+.testimonial-text {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  letter-spacing: 0%;
+}
+
+.testimonial-author {
+  font-family: 'DM Sans', sans-serif;
+  line-height: 150%;
+  letter-spacing: 0%;
+} 
