@@ -15,7 +15,7 @@ export default function Navbar() {
           <img
             src={logo}
             alt="Bakistry Logo"
-            className="h-16 w-16 rounded-full object-cover"
+            className="md:h-16 md:w-16 h-8 w-8 rounded-full object-cover"
           />
         </div>
 
@@ -96,8 +96,8 @@ export default function Navbar() {
       </div>
 
       {/* Centered Site Title */}
-      <div className="flex flex-col items-center py-1 bg-white border-b border-gray-100">
-        <h1 className="text-3xl md:text-4xl tracking-[0.2em] text-black font-light uppercase">
+      <div className="flex flex-col items-center md:py-1 bg-white border-b border-gray-100">
+        <h1 className="text-2xl md:text-4xl tracking-[0.2em] text-black font-light uppercase">
           THE BAKISTRY
         </h1>
         <span className="mt-2 text-xs tracking-[0.3em] text-gray-500 font-light uppercase">

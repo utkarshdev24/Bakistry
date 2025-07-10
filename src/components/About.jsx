@@ -1,7 +1,7 @@
 import React from "react";
-import { Instagram } from "lucide-react";
 import "../styles/About.css";
 import "../styles/fonts.css";
+import { Instagram } from "lucide-react";
 
 const About = () => {
   return (
@@ -11,7 +11,7 @@ const About = () => {
                           <div className="grid grid-cols-1 lg:grid-cols-2 gap-6 lg:gap-12 items-center">
           <div className="space-y-4 lg:space-y-6 w-full max-w-7xl mx-auto lg:mx-0 px-4 lg:px-6 lg:pl-12 py-8 lg:py-16">
             <h1
-              className="text-2xl md:text-3xl lg:text-5xl text-gray-900 leading-tight"
+              className="text-2xl md:text-3xl lg:text-5xl text-gray-900  leading-tight"
               style={{ fontFamily: "Bellefair" }}
             >
               MORE THAN JUST CAKES — WE BAKE MOMENTS THAT MATTER.
@@ -115,13 +115,13 @@ const About = () => {
             </div>
           </div>
           <div className="relative">
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 lg:gap-x-8 gap-y-12 lg:gap-y-24 items-center">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-x-4 lg:gap-x-8 gap-y-10 lg:gap-y-16 items-center">
               {/* First Location */}
               <div className="md:order-1 flex justify-center">
                 <img
                   src="/assets/our_presence.jpg"
                   alt="Chef decorating a cake"
-                  className="w-full h-full max-w-sm md:max-w-full"
+                  className="w-full h-full md:max-w-full"
                 />
               </div>
               <div className="md:order-2 text-center md:text-left relative px-4 md:px-0">
@@ -132,7 +132,7 @@ const About = () => {
                 </p>
               </div>
               <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 z-10 hidden md:block">
-                <img src="/assets/frame_our_presence.jpg" alt="decoration" className="w-16 lg:w-24"/>
+                <img src="/assets/frame_our_presence.jpg" alt="decoration" className="w-20 lg:w-40"/>
               </div>
               {/* Second Location */}
               <div className="md:order-4 flex justify-center">

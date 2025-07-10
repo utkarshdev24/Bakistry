@@ -1,11 +1,9 @@
 import React, { useState } from "react";
-import cake1 from "../assets/cake1.jpg";
-import cake2 from "../assets/cake2.jpg";
 import "../styles/TestimonialCard.css";
 import "../styles/fonts.css";
 import "../styles/Bestsellers.css";
 import { ShoppingCart } from "lucide-react";
-import why from "../../public/assets/why.jpg";
+import why from "/assets/why.jpg";
 
 const Home = () => {
   const testimonials = [
@@ -133,12 +131,12 @@ const Home = () => {
     ((currentBestsellerPage + 1) / totalBestsellerPages) * 100;
 
   return (
-    <div className="min-h-screen bg-white">
+    <div className="min-h-screen bg-white overflow-x-hidden">
       {/* Hero Section - Bespoke Cakes */}
-      <section className="relative bg-[#D5F1FC]">
-        <div className="grid grid-cols-1 lg:grid-cols-2 items-center">
+      <section className="relative bg-[#D5F1FC] lg:h-[768px] flex items-center w-full">
+        <div className="grid grid-cols-1 lg:grid-cols-[45%_55%] items-center w-full max-w-full">
           {/* Left Content */}
-          <div className="space-y-6 lg:space-y-8 text-center lg:text-left px-6 lg:pl-12 py-12 lg:py-16">
+          <div className="space-y-6 lg:space-y-8 text-center lg:text-left px-6 lg:pl-12 py-12 lg:py-16 w-full">
             <div className="space-y-4 lg:space-y-6">
               <p
                 className="text-gray-800 uppercase font-light py-2 text-sm lg:text-xl"
@@ -155,7 +153,7 @@ const Home = () => {
               >
                 HANDCRAFTED WITH LOVE & DETAIL
               </p>
-              <h1 className="text-3xl md:text-4xl lg:text-6xl text-black leading-[1.5] font-light uppercase tracking-tight">
+              <h1 className="text-3xl md:text-4xl lg:text-7xl text-black leading-[1.5] font-light uppercase tracking-tight">
                 BESPOKE CAKES
                 <br />
                 THAT SPEAK TO
@@ -163,27 +161,30 @@ const Home = () => {
                 YOUR HEART
               </h1>
             </div>
-            <button className="mt-2 px-4 lg:px-6 add-to-cart-gradient hover:opacity-80 text-black py-2 lg:py-3 font-medium transition-opacity flex items-center justify-center text-sm lg:text-base">
-              <span className="dm-sans-uppercase font-medium">
-                Order a cake
-              </span>
-            </button>
+            {/* Button container: center on mobile, left on large screens */}
+            <div className="flex justify-center lg:justify-start">
+              <button className="mt-2 px-4 lg:px-6 add-to-cart-gradient hover:opacity-80 text-black py-2 lg:py-3 font-medium transition-opacity flex items-center justify-center text-sm lg:text-base">
+                <span className="dm-sans-uppercase font-medium">
+                  Order a cake
+                </span>
+              </button>
+            </div>
           </div>
 
           {/* Right Images - Multiple smaller cakes */}
-          <div className="flex flex-col lg:flex-row justify-center lg:justify-end items-center gap-2 lg:gap-0 mt-6 lg:mt-0">
-            <div className="relative">
+          <div className="lg:h-[768px] w-full flex max-w-full">
+            <div className="w-1/2 h-full">
               <img
-                src={cake1}
+                src="/assets/hero1.png"
                 alt="Artistic cake with cherry blossoms under glass dome"
-                className="w-full max-w-sm lg:w-[55vw] h-auto lg:h-[600px] object-cover shadow-xl"
+                className="w-full h-full object-cover"
               />
             </div>
-            <div className="relative">
+            <div className="w-1/2 h-full">
               <img
-                src={cake2}
+                src="/assets/hero2.png"
                 alt="Artistic cake with cherry blossoms under glass dome"
-                className="w-full max-w-sm lg:w-[55vw] h-auto lg:h-[600px] object-cover shadow-xl"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
@@ -643,7 +644,7 @@ const Home = () => {
                 <img
                   src="/assets/follow.jpg"
                   alt="Instagram post"
-                  className="w-full h-48 md:h-64 lg:h-80 object-cover shadow-lg"
+                  className="w-full h-96 md:h-full  object-cover shadow-lg"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-black/70 to-transparent flex items-end p-2 lg:p-4">
                   <div className="text-white">
