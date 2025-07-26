@@ -1,0 +1,83 @@
+.timeline {
+  position: relative;
+  min-height: 400px;
+}
+
+@media (min-width: 1024px) {
+  .timeline {
+    min-height: 500px;
+  }
+}
+
+.timeline::before {
+  content: '';
+  position: absolute;
+  left: 10px;
+  top: 16px;
+  bottom: 80px; /* Stop before the last timeline item */
+  width: 2px;
+  background-image: repeating-linear-gradient(to bottom, #D5F1FC, #D5F1FC 4px, transparent 4px, transparent 8px);
+}
+
+@media (min-width: 1024px) {
+  .timeline::before {
+    bottom: 100px;
+  }
+}
+
+.timeline-item {
+  position: relative;
+  padding-left: 30px;
+  margin-bottom: 3rem;
+  height: 50px; /* Ensure minimum height for empty items */
+}
+
+@media (min-width: 1024px) {
+  .timeline-item {
+    padding-left: 40px;
+    margin-bottom: 4.5rem;
+    height: 60px;
+  }
+}
+
+.timeline-item:last-child {
+    margin-bottom: 0;
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 10px;
+  top: 0;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border-radius: 9999px;
+  background-color: #D5F1FC;
+  border: none;
+  z-index: 1; /* Ensure dots are always visible */
+}
+
+@media (min-width: 1024px) {
+  .timeline-dot {
+    width: 24px;
+    height: 24px;
+  }
+}
+
+.timeline-item:first-child .timeline-dot {
+    width: 28px;
+    height: 28px;
+    border: 4px solid #071931;
+    background-color: #D5F1FC;
+} 
+
+@media (min-width: 1024px) {
+  .timeline-item:first-child .timeline-dot {
+    width: 32px;
+    height: 32px;
+    border: 6px solid #071931;
+  }
+} 

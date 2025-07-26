@@ -1,0 +1,29 @@
+/* Font imports */
+@import url('https://fonts.googleapis.com/css2?family=Bellefair&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@200;400;600;700&display=swap');
+
+/* Font variables */
+:root {
+  --font-bellefair: 'Bellefair', serif;
+}
+
+/* Typography utility classes */
+.tracking-tight {
+  letter-spacing: -0.04em;
+}
+
+.tracking-wide {
+  letter-spacing: 0.2em;
+}
+
+.tracking-wider {
+  letter-spacing: 0.3em;
+}
+
+.dm-sans-uppercase {
+  font-family: "DM Sans", sans-serif;
+  letter-spacing: 0.04em; /* 4% */
+}
+.button-gradient {
+  background: radial-gradient(93.75% 296.87% at 6.25% 7.29%, #FAE9A6 2%, #EAD465 95.09%);
+} 
